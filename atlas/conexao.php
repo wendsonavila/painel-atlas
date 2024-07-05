@@ -1,0 +1,1 @@
+<?php  $dbname = 'pain_atla_atlaspainel'; $dbuser = 'pain_wrssh'; $dbpass = '84cngtCnfcR4VU8X'; $dbhost = 'localhost'; $apiserver = 'whatsapi.wrssh.online'; $_SESSION['token'] = 'sgdfsr43erfggfd4rgs3rsdfsdfsadfe'; ?>

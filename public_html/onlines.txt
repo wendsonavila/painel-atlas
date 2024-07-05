@@ -1,0 +1,5 @@
+wendson
+wendson
+
+nc: port number invalid: status
+awk: fatal: cannot open file `/var/log/v2ray/access.log' for reading (No such file or directory)

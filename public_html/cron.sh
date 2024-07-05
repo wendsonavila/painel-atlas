@@ -1,0 +1,2 @@
+#!/bin/sh
+curl —silent https://painel.wrssh.shop/onlines.php >/dev/null 2>&1 && curl —silent https://painel.wrssh.shop/checkpag.php >/dev/null 2>&1 && curl —silent https://painel.wrssh.shop/views/verificarpag.php >/dev/null 2>&1
