@@ -1,0 +1,611 @@
+<html lang="pt-br"><head>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta name="description" content="Api Whatsapp">
+    <meta name="Jefferson" content="WebHostPro">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1101332090609479731/1154943221068206130/baf8ac55-nova-imagem-do-whatsapp-b-removebg-preview.png" type="image/x-icon">
+    <title>Api Whatsapp</title>
+    <link id="style" href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/web-fonts/icons.css" rel="stylesheet">
+    <link href="assets/plugins/web-fonts/font-awesome/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/plugins/web-fonts/plugin.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="ltr main-body leftmenu dark-theme light-theme" style=""><div class="horizontalMenucontainer">
+    <script src="assets/plugins/notify/js/notifit-custom.js"></script>
+    <script src="assets/plugins/notify/js/notifIt.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script>
+        function not9() {
+            notif({
+                type: "warning",
+                msg: "<b>Warning:</b> Something Went Wrong",
+                position: "left"
+            });
+        }
+    </script>
+    <!-- Loader -->
+    <div id="global-loader" style="display: none;">
+        <img src="assets/img/loader.svg" class="loader-img" alt="Loader">
+    </div>
+    <!-- End Loader -->
+
+    <!-- Page -->
+    <div class="page">
+        <!-- Main Header-->
+        <div class="main-header side-header sticky" style="margin-bottom: -58.8889px;">
+            <div class="main-container container-fluid">
+                <div class="main-header-left">
+                    <a class="main-header-menu-icon" href="javascript:void(0)" id="mainSidebarToggle"><span></span></a>
+                    <div class="hor-logo">
+                        <a class="main-logo" href="home">
+                            <img src="https://cdn.discordapp.com/attachments/942800753309921290/1156115075086700554/logo_1.png?ex=6513cb91&amp;is=65127a11&amp;hm=5b7993b94182e1b3931da3b24388250a878bef9809d6ad0c59c9cef991f3d2ee&amp;" class="header-brand-img desktop-logo" alt="logo">
+                            <img src="https://cdn.discordapp.com/attachments/1051302877987086437/1070581060821340250/logo.png" class="header-brand-img desktop-logo-dark" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="main-header-center">
+                    <div class="responsive-logo">
+                        <a class="main-logo" href="home">
+                            <img src="assets/img/logo.png" width="250" height="50" class="mobile-logo" alt="logo">
+                            <img src="assets/img/logo.png" width="250" height="50" class="mobile-logo-dark" alt="logo">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="main-header-right">
+                    <button class="navbar-toggler navresponsive-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fe fe-more-vertical header-icons navbar-toggler-icon"></i>
+                    </button><!-- Navresponsive closed -->
+                    <div class="navbar navbar-expand-lg  nav nav-item  navbar-nav-right responsive-navbar navbar-dark  ">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                            <div class="d-flex order-lg-2 ms-auto">
+
+                                <div class="dropdown">
+                                    <a class="nav-link icon full-screen-link">
+                                        <i class="fe fe-maximize fullscreen-button fullscreen header-icons"></i>
+                                        <i class="fe fe-minimize fullscreen-button exit-fullscreen header-icons"></i>
+                                    </a>
+                                </div>
+                                <div class="dropdown main-profile-menu">
+                                    <a class="d-flex" href="javascript:void(0)">
+                                        <span class="main-img-user"><img alt="avatar" src="./assets/img/users/1.png"></span>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <div class="header-navheading">
+                                            <h6 class="main-notification-title">
+                                                teste wrssh
+                                            </h6>
+                                            <p class="main-notification-text">Usuário</p>
+                                        </div>
+                                        <a class="dropdown-item border-top" href="perfil">
+                                            <i class="fe fe-user"></i> Editar Conta
+                                        </a>
+                                        <a class="dropdown-item" href="https://contate.me/webhostpro">
+                                            <i class="fe fe-compass"></i> Suporte
+                                        </a>
+                                        <a class="dropdown-item" href="sair">
+                                            <i class="fe fe-power"></i> Sair
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Profile -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="jumps-prevent" style="padding-top: 58.8889px;"></div>
+        <!-- End Main Header-->
+
+        <!-- Sidemenu -->
+        <div class="sticky" style="margin-bottom: -58.8889px;">
+            <div class="main-menu main-sidebar main-sidebar-sticky side-menu ps">
+                <div class="main-sidebar-header main-container-1 active">
+                    <div class="sidemenu-logo">
+                        <a class="main-logo" href="home">
+                            <img src="assets/img/logo.png" class="header-brand-img desktop-logo" alt="logo">
+                            <img src="assets/img/logo1.png" width="50" height="50" class="header-brand-img icon-logo" alt="logo">
+                            <img src="assets/img/logo1.png" width="50" height="50" class="header-brand-img desktop-logo theme-logo" alt="logo">
+                            <img src="assets/img/logo1.png" width="50" height="50" class="header-brand-img icon-logo theme-logo" alt="logo">
+                        </a>
+                    </div>
+                    <div class="main-sidebar-body main-body-1 is-expanded">
+                        <div class="slide-left disabled active d-none" id="slide-left"><i class="fe fe-chevron-left"></i></div>
+                        <ul class="menu-nav nav">
+                            <li class="nav-header"><span class="nav-label">Dashboard</span></li>
+                            <li id="dashboard" class="nav-item">
+                                <a class="nav-link" href="home">
+                                    <span class="shape1"></span>
+                                    <span class="shape2"></span>
+                                    <i class="ti-home sidemenu-icon menu-icon "></i>
+                                    <span class="sidemenu-label">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-header"><span class="nav-label">Conexão</span></li>
+                            <li id="conexao" class="nav-item active show">
+                                <a class="nav-link with-sub active" href="javascript:void(0)">
+                                    <span class="shape1"></span>
+                                    <span class="shape2"></span>
+                                    <i class="ti-mobile sidemenu-icon menu-icon "></i>
+                                    <span class="sidemenu-label">Whatsapp
+                                        <span class="sidemenu-label2"></span>
+                                    </span>
+                                    <i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="nav-sub open" style="display: block;">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)"></a></li>
+                                    <li class="nav-sub-item active"> <a class="nav-sub-link active" href="sessoes">Sessões</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-header"><span class="nav-label">Configurar</span></li>
+                            <li id="configuracao" class="nav-item">
+                                <a class="nav-link with-sub" href="javascript:void(0)">
+                                    <span class="shape1"></span>
+                                    <span class="shape2"></span>
+                                    <i class="ti-settings sidemenu-icon menu-icon "></i>
+                                    <span class="sidemenu-label">Configurações</span>
+                                    <i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="nav-sub">
+
+                                    <li class="nav-sub-item"><a class="nav-sub-link" href="perfil">Sua Conta</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-header"><span class="nav-label">Sair</span></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sair">
+                                    <span class="shape1"></span>
+                                    <span class="shape2"></span>
+                                    <i class="ti-shift-left sidemenu-icon menu-icon "></i>
+                                    <span class="sidemenu-label">Sair</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="slide-right" id="slide-right"><i class="fe fe-chevron-right"></i></div>
+                    </div>
+                </div>
+            <div class="ps__rail-x" style="left: 0px; top: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+        </div><div class="jumps-prevent" style="padding-top: 58.8889px;"></div>
+        <!-- End Sidemenu -->
+
+        <!-- Main Content-->
+        <div class="main-content side-content pt-0">
+
+            <div class="main-container container-fluid">
+                <div class="inner-body">
+                    <br>
+                    <br>
+                    <!-- End Page Header -->
+                    <div id="customAlert" class="alert alert-success" role="alert" style="display: none;">
+                        <button aria-label="Close" class="btn-close" data-bs-dismiss="alert" type="button">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <strong id="alertTitle"></strong> <span id="alertMessage"></span>
+                    </div>
+					<br>
+                  	<br>
+                  	<br>
+                  	<br>
+
+                    <script>
+                        function mostrarAlerta(type, message) {
+                            var alertDiv = document.getElementById('customAlert');
+                            var alertTitle = document.getElementById('alertTitle');
+                            var alertMessage = document.getElementById('alertMessage');
+
+                            // Defina o tipo e a mensagem do alerta
+                            alertDiv.classList.remove('alert-success', 'alert-info', 'alert-warning', 'alert-danger');
+                            alertDiv.classList.add('alert-' + type);
+                            alertTitle.textContent = '';
+                            alertMessage.textContent = message;
+
+                            // Mostre o alerta
+                            alertDiv.style.display = 'block';
+
+                            //sumir apos 2 segundos
+                            setTimeout(function () {
+                                alertDiv.style.display = 'none';
+                            }, 2000);
+
+                        }
+                    </script>
+    <link href="../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
+    <script src="../assets/plugins/sweet-alert/sweetalert.min.js"></script>
+    <script src="../assets/plugins/sweet-alert/jquery.sweet-alert.js"></script>
+
+    <div class="row row-sm">
+        <div class="col-lg-12">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <div>
+                        <h6 class="main-content-label mb-1">Sessões</h6>
+                        <p class="text-muted card-sub-title">Aqui você pode ver suas sessões</p>
+                        <!-- Botão para abrir modal de criação de instância -->
+                        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#criarInstanciaModal">
+                            Criar Nova Instância
+                        </button>
+                    </div>
+                    <div class="table-responsive border">
+                        <table class="table text-nowrap text-md-nowrap table-striped mg-b-0">
+                            <thead>
+                                <tr>
+                                    <th>Token</th>
+                                    <th>Status</th>
+                                    <th>Instância</th>
+                                    <th>Número</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dadosTabela">
+                    
+                    </tr>
+                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para criar instância do WhatsApp -->
+    <div class="modal" id="criarInstanciaModal" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Criar Nova Instância do WhatsApp</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formCriarInstancia">
+                        <div class="mb-3">
+                            <label for="numeroInput" class="form-label">Número de Telefone</label>
+                            <input type="text" class="form-control" id="numeroInput" name="numero" placeholder="Digite o número de telefone">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" id="criarInstanciaBtn">Criar Instância</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para exibir QR Code e pairingCode -->
+    <div class="modal" id="qrCodeModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">QR Code para Conexão</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="qrCodeImage" src="" alt="QR Code" class="img-fluid">
+                    <div id="pairingCodeContainer" class="pairing-code-container">
+                        <!-- Pairing Code será inserido aqui dinamicamente -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- End Row -->
+
+</div>
+</div>
+</div>
+<!-- End Main Content-->
+
+<!-- Main Footer-->
+<div class="main-footer text-center">
+    <div class="container">
+        <div class="row row-sm">
+            <div class="col-md-12">
+                <span>Copyright © 2023
+                    <a href="javascript:void(0)">WebHostPro</a> Todos Direitos Reservados.</span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<a href="#top" id="back-to-top"><i class="fe fe-arrow-up"></i></a>
+<script src="assets/plugins/jquery/jquery.min.js"></script>
+<script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="assets/plugins/sidemenu/sidemenu.js" id="leftmenu"></script>
+<script src="assets/plugins/sidebar/sidebar.js"></script>
+<script src="assets/plugins/select2/js/select2.min.js"></script>
+<script src="assets/js/select2.js"></script>
+<script src="assets/js/sticky.js"></script>
+
+<script src="assets/js/custom.js"></script>
+
+
+
+
+        <script>
+            $(document).ready(function () {
+                // Função para mostrar alerta usando SweetAlert
+                function mostrarAlerta(type, message) {
+                    swal({
+                        title: '',
+                        text: message,
+                        icon: type,
+                        button: 'OK',
+                    });
+                }
+
+                // Copiar Chave API
+                $('.copiarchave').click(function () {
+                    var realToken = $(this).data('real-token');
+                    var $temp = $("<input>");
+                    $("body").append($temp);
+                    $temp.val(realToken).select();
+                    document.execCommand("copy");
+                    $temp.remove();
+                    mostrarAlerta('success', 'Token API copiado com sucesso!');
+                });
+
+                // Copiar Token API
+                $('.copiartoken').click(function () {
+                    var realToken = $(this).data('real-token');
+                    var $temp = $("<input>");
+                    $("body").append($temp);
+                    $temp.val(realToken).select();
+                    document.execCommand("copy");
+                    $temp.remove();
+                    mostrarAlerta('success', 'Chave API copiada com sucesso!');
+                });
+
+                // Abrir modal para criar instância do WhatsApp ao clicar no botão
+                $('#criarInstanciaBtn').click(function () {
+                    var numero = $('#numeroInput').val();
+                    if (!numero) {
+                        mostrarAlerta('error', 'Por favor, insira o número de telefone.');
+                        return;
+                    }
+
+                    $.ajax({
+                        url: '/criar-instancia-whatsapp',
+                        type: 'POST',
+                        data: { numero: numero },
+                        success: function (response) {
+                            // Exibir mensagem de sucesso
+                            mostrarAlerta('success', 'Instância do WhatsApp criada com sucesso!');
+                            location.reload();
+                        },
+                        error: function (xhr, status, error) {
+                            mostrarAlerta('error', 'Erro ao criar instância do WhatsApp.');
+                            console.error('Erro ao criar instância do WhatsApp:', error);
+                        }
+                    });
+                });
+
+                function carregarDadosWhatsApp() {
+                    $.ajax({
+                        url: '/dados-whatsapp',
+                        type: 'GET',
+                        success: function (response) {
+                            var tabela = $('#dadosTabela');
+                            tabela.empty(); // Limpa a tabela antes de inserir novos dados
+
+                            if (response.dados) {
+                                var dados = response.dados;
+
+                                var linha = `
+                    <tr>
+                        <td>${dados.token}</td>
+                        <td>${dados.status}</td>
+                        <td>${dados.instancia}</td>
+                        <td>${dados.numero}</td>
+                        <td>
+                            <button class="btn btn-primary conectar" 
+                                data-token="${dados.token}" 
+                                data-numero="${dados.numero}" 
+                                data-instancia="${dados.instancia}">Conectar</button>
+                            <button class="btn btn-danger excluir" 
+                                data-token="${dados.token}" 
+                                data-numero="${dados.numero}" 
+                                data-instancia="${dados.instancia}">Excluir</button>
+                        </td>
+                    </tr>
+                `;
+                                tabela.append(linha);
+                            } else {
+                                var linhaErro = `
+                    <tr>
+                        <td colspan="5">Nenhuma instância do WhatsApp encontrada.</td>
+                    </tr>
+                `;
+                                tabela.append(linhaErro);
+                            }
+                        },
+                        error: function (xhr, status, error) {
+                            if (xhr.status === 404) {
+                                var tabela = $('#dadosTabela');
+                                tabela.empty(); // Limpa a tabela antes de inserir a mensagem de erro
+
+                                var linhaErro = `
+                    <tr>
+                        <td colspan="5">Nenhuma Instância do WhatsApp encontrada.</td>
+                    </tr>
+                `;
+                                tabela.append(linhaErro);
+                            } else {
+                                mostrarAlerta('error', 'Erro ao recuperar dados do WhatsApp.');
+                                console.error('Erro ao recuperar dados do WhatsApp:', error);
+                            }
+                        }
+                    });
+                }
+
+
+                // Função para conectar ao WhatsApp
+                $(document).on('click', '.conectar', function () {
+                    var token = $(this).data('token');
+                    var numero = $(this).data('numero');
+                    var instancia = $(this).data('instancia');
+
+                    // Enviar requisição para conectar ao WhatsApp
+                    $.ajax({
+                        url: '/conectar-whatsapp',
+                        type: 'POST',
+                        data: { token: token, numero: numero, instancia: instancia },
+                        success: function (response) {
+                            // Verificar se retornou mensagem de sucesso
+                            if (response.message) {
+                                // WhatsApp já foi conectado com sucesso
+                                mostrarAlerta('success', response.message);
+                                $('#qrCodeModal').modal('hide'); // Ocultar modal de QR Code
+                                return;
+                            }
+
+                            // Exibir modal com QR Code e pairingCode
+                            $('#qrCodeImage').attr('src', 'data:image/png;base64,' + response.base64);
+                            exibirPairingCode(response.pairingCode);
+                            $('#qrCodeModal').modal('show');
+
+                            // Verificar estado de conexão a cada segundo
+                            var intervalo = setInterval(function () {
+                                $.ajax({
+                                    url: '/verificar-conexao-whatsapp',
+                                    type: 'POST',
+                                    data: { token: token, instancia: instancia },
+                                    success: function (res) {
+                                        console.log('Resposta da verificação de conexão:', res); // Debugging
+
+                                        if (JSON.stringify(res) === JSON.stringify({ mensagem: 'Whatsapp conectado com sucesso!' })) {
+                                            // WhatsApp conectado, ocultar QR Code e Pairing-Code
+                                            $('#qrCodeModal').modal('hide');
+
+                                            // Exibir mensagem de sucesso
+                                            mostrarAlerta('success', 'WhatsApp conectado com sucesso!');
+                                            clearInterval(intervalo); // Parar verificação
+                                        }
+                                    },
+                                    error: function (xhr, status, error) {
+                                        console.error('Erro ao verificar conexão do WhatsApp:', error);
+                                    }
+                                });
+                            }, 1000); // Verificar a cada segundo
+                        },
+                        error: function (xhr, status, error) {
+                            mostrarAlerta('error', 'Erro ao conectar ao WhatsApp.');
+                            console.error('Erro ao conectar ao WhatsApp:', error);
+                        }
+                    });
+                });
+
+                // Função para excluir instância do WhatsApp
+                $(document).on('click', '.excluir', function () {
+                    var token = $(this).data('token');
+                    var instancia = $(this).data('instancia');
+
+                    // Confirmar exclusão com o usuário
+                    if (!confirm('Tem certeza que deseja excluir esta instância do WhatsApp?')) {
+                        return; // Aborta se o usuário cancelar
+                    }
+
+                    // Dados a serem enviados
+                    var requestData = {
+                        token: token,
+                        instancia: instancia
+                    };
+
+                    // Requisição AJAX para excluir a instância
+                    $.ajax({
+                        url: '/excluir-instancia-whatsapp',
+                        type: 'POST',
+                        data: requestData,
+                        success: function (response) {
+                            // Exibição de alerta de sucesso e recarregar a página
+                            mostrarAlerta('success', 'Instância do WhatsApp excluída com sucesso!');
+                            location.reload(); // Recarrega a página após exclusão
+                        },
+                        error: function (xhr, status, error) {
+                            // Exibição de alerta de erro
+                            mostrarAlerta('error', 'Erro ao excluir instância do WhatsApp.');
+                            console.error('Erro ao excluir instância do WhatsApp:', error);
+                        }
+                    });
+                });
+
+
+                // Chama a função para carregar os dados ao carregar a página
+                carregarDadosWhatsApp();
+            });
+
+            // Função para exibir o pairingCode com blocos numerados
+            function exibirPairingCode(pairingCode) {
+                var pairingCodeContainer = $('#pairingCodeContainer');
+                pairingCodeContainer.empty();
+
+                // Dividir o pairingCode em duas partes
+                var primeiraParte = pairingCode.substring(0, 4);
+                var segundaParte = pairingCode.substring(4);
+
+                // Criar os blocos para a primeira parte
+                for (var i = 0; i < primeiraParte.length; i++) {
+                    var letraOuNumero = primeiraParte[i];
+                    var bloco = $('<div class="pairing-code-block">' + letraOuNumero + '</div>');
+
+                    pairingCodeContainer.append(bloco);
+                }
+
+                // Adicionar o separador "-"
+                pairingCodeContainer.append('<div class="pairing-code-separator">-</div>');
+
+                // Criar os blocos para a segunda parte
+                for (var j = 0; j < segundaParte.length; j++) {
+                    var letraOuNumero = segundaParte[j];
+                    var bloco = $('<div class="pairing-code-block">' + letraOuNumero + '</div>');
+
+                    pairingCodeContainer.append(bloco);
+                }
+            }
+        </script></div><div class="main-navbar-backdrop"></div><div class="sweet-overlay" tabindex="-1" style="opacity: -1.02; display: none;"></div><div class="sweet-alert hideSweetAlert" data-custom-class="" data-has-cancel-button="false" data-has-confirm-button="true" data-allow-outside-click="false" data-has-done-function="false" data-animation="pop" data-timer="null" style="display: none; margin-top: -111px; opacity: -1.02;"><div class="sa-icon sa-error" style="display: none;">
+      <span class="sa-x-mark">
+        <span class="sa-line sa-left"></span>
+        <span class="sa-line sa-right"></span>
+      </span>
+    </div><div class="sa-icon sa-warning" style="display: none;">
+      <span class="sa-body"></span>
+      <span class="sa-dot"></span>
+    </div><div class="sa-icon sa-info" style="display: none;"></div><div class="sa-icon sa-success" style="display: none;">
+      <span class="sa-line sa-tip"></span>
+      <span class="sa-line sa-long"></span>
+
+      <div class="sa-placeholder"></div>
+      <div class="sa-fix"></div>
+    </div><div class="sa-icon sa-custom" style="display: none;"></div><h2></h2>
+    <p style="display: block;">Erro ao conectar ao WhatsApp.</p>
+    <fieldset>
+      <input type="text" tabindex="3" placeholder="">
+      <div class="sa-input-error"></div>
+    </fieldset><div class="sa-error-container">
+      <div class="icon">!</div>
+      <p>Not valid!</p>
+    </div><div class="sa-button-container">
+      <button class="cancel" tabindex="2" style="display: none; box-shadow: none;">Cancel</button>
+      <div class="sa-confirm-button-container">
+        <button class="confirm" tabindex="1" style="display: inline-block; background-color: rgb(140, 212, 245); box-shadow: rgba(140, 212, 245, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset;">OK</button><div class="la-ball-fall">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div></div></body></html>
